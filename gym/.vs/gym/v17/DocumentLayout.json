@@ -1,0 +1,499 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\estado_pagosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\estado_pagosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\estados_inscripcionesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\estados_inscripcionesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\inscripcionesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\inscripcionesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\observacionesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\observacionesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\pagosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\pagosprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\personasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\personasprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\planes_sedesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\planes_sedesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\planesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\planesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\repositorio\\sedesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\repositorio\\sedesprueba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\sedes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\sedes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_repositorio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|solutionrelative:lib_repositorio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\nucleo\\entidadesnucleo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\nucleo\\entidadesnucleo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_repositorio\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|solutionrelative:lib_repositorio\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_repositorio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|solutionrelative:lib_repositorio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\observaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\observaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\secretos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:secretos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\nucleo\\datosgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\nucleo\\datosgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\planes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\planes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\planes_sedes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\planes_sedes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\nucleo\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\nucleo\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\estados_inscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\estados_inscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\estados_pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\estados_pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\inscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\inscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\entidades\\personas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\ut_presentacion\\ut_presentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CC133F09-D9C0-4D23-9A55-1DC28B8E648F}|ut_presentacion\\ut_presentacion.csproj|solutionrelative:ut_presentacion\\ut_presentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_repositorio\\lib_repositorio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|solutionrelative:lib_repositorio\\lib_repositorio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_dominio\\lib_dominio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ECA613F7-D34A-433C-B682-E2DA5360F2AB}|Lib_dominio\\Lib_dominio.csproj|solutionrelative:lib_dominio\\lib_dominio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|c:\\users\\autokars\\onedrive\\escritorio\\gym\\lib_repositorio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{88F3E1C2-929F-40F0-B9A4-6A273D580DAA}|Lib_repositorio\\Lib_repositorio.csproj|solutionrelative:lib_repositorio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonasPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\PersonasPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\PersonasPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\PersonasPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\PersonasPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T05:52:43.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\PagosPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\PagosPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\PagosPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\PagosPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T03:01:54.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ObservacionesPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\ObservacionesPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\ObservacionesPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\ObservacionesPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\ObservacionesPrueba.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADgvy0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T03:22:38.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Estados_InscripcionesPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\Estados_InscripcionesPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\Estados_InscripcionesPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\Estados_InscripcionesPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\Estados_InscripcionesPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T05:02:24.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InscripcionesPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\InscripcionesPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\InscripcionesPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\InscripcionesPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\InscripcionesPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T02:12:38.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Estado_pagosPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\Estado_pagosPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\Estado_pagosPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\Estado_pagosPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\Estado_pagosPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:47:11.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Planes_SedesPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\Planes_SedesPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\Planes_SedesPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\Planes_SedesPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\Planes_SedesPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T05:23:03.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PLanesPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\PLanesPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\PLanesPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\PLanesPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\PLanesPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:54:35.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SedesPrueba.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\SedesPrueba.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Repositorio\\SedesPrueba.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Repositorio\\SedesPrueba.cs",
+              "RelativeToolTip": "ut_presentacion\\Repositorio\\SedesPrueba.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAApwC0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:26:50.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sedes.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Sedes.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Sedes.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Sedes.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Sedes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T03:57:26.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "script.sql ",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\script.sql",
+              "RelativeDocumentMoniker": "Lib_repositorio\\script.sql",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\script.sql",
+              "RelativeToolTip": "Lib_repositorio\\script.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-31T03:00:49.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EntidadesNucleo.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Nucleo\\EntidadesNucleo.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Nucleo\\EntidadesNucleo.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Nucleo\\EntidadesNucleo.cs",
+              "RelativeToolTip": "ut_presentacion\\Nucleo\\EntidadesNucleo.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAApwGYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:41:41.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\Implementaciones\\Conexion.cs",
+              "RelativeDocumentMoniker": "Lib_repositorio\\Implementaciones\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\Implementaciones\\Conexion.cs",
+              "RelativeToolTip": "Lib_repositorio\\Implementaciones\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:32:52.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IConexion.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\Interfaces\\IConexion.cs",
+              "RelativeDocumentMoniker": "Lib_repositorio\\Interfaces\\IConexion.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\Interfaces\\IConexion.cs",
+              "RelativeToolTip": "Lib_repositorio\\Interfaces\\IConexion.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:29:59.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Observaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Observaciones.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Observaciones.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Observaciones.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Observaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T03:18:35.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "secretos.json",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\secretos.json",
+              "RelativeDocumentMoniker": "secretos.json",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\secretos.json",
+              "RelativeToolTip": "secretos.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-03T21:56:40.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Planes.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Planes.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Planes.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Planes.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Planes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:38:48.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Planes_Sedes.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Planes_Sedes.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Planes_Sedes.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Planes_Sedes.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Planes_Sedes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T05:15:55.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DatosGenerales.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Nucleo\\DatosGenerales.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Nucleo\\DatosGenerales.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Nucleo\\DatosGenerales.cs",
+              "RelativeToolTip": "Lib_dominio\\Nucleo\\DatosGenerales.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T04:08:25.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Configuracion.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Nucleo\\Configuracion.cs",
+              "RelativeDocumentMoniker": "ut_presentacion\\Nucleo\\Configuracion.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\Nucleo\\Configuracion.cs",
+              "RelativeToolTip": "ut_presentacion\\Nucleo\\Configuracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:51:44.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Estados_pagos.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Estados_pagos.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Estados_pagos.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Estados_pagos.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Estados_pagos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:42:20.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Estados_Inscripciones.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Estados_Inscripciones.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Estados_Inscripciones.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Estados_Inscripciones.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Estados_Inscripciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:59:58.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Inscripciones.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Inscripciones.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Inscripciones.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Inscripciones.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Inscripciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T02:00:29.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Pagos.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Pagos.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Pagos.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Pagos.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Pagos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T02:55:50.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Personas.cs",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Personas.cs",
+              "RelativeDocumentMoniker": "Lib_dominio\\Entidades\\Personas.cs",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Entidades\\Personas.cs",
+              "RelativeToolTip": "Lib_dominio\\Entidades\\Personas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T05:46:34.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Lib_repositorio.csproj",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\Lib_repositorio.csproj",
+              "RelativeDocumentMoniker": "Lib_repositorio\\Lib_repositorio.csproj",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_repositorio\\Lib_repositorio.csproj",
+              "RelativeToolTip": "Lib_repositorio\\Lib_repositorio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T02:59:11.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ut_presentacion.csproj",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\ut_presentacion.csproj",
+              "RelativeDocumentMoniker": "ut_presentacion\\ut_presentacion.csproj",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\ut_presentacion\\ut_presentacion.csproj",
+              "RelativeToolTip": "ut_presentacion\\ut_presentacion.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T03:38:41.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Lib_dominio.csproj",
+              "DocumentMoniker": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Lib_dominio.csproj",
+              "RelativeDocumentMoniker": "Lib_dominio\\Lib_dominio.csproj",
+              "ToolTip": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\gym\\Lib_dominio\\Lib_dominio.csproj",
+              "RelativeToolTip": "Lib_dominio\\Lib_dominio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T02:30:14.809Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

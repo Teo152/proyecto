@@ -1,0 +1,15 @@
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repositorio.csproj.AssemblyReference.cache
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repositorio.AssemblyInfoInputs.cache
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repositorio.AssemblyInfo.cs
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\bin\Debug\net8.0\Lib_repositorio.deps.json
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\bin\Debug\net8.0\Lib_repositorio.dll
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\bin\Debug\net8.0\Lib_repositorio.pdb
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\bin\Debug\net8.0\Lib_dominio.dll
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\bin\Debug\net8.0\Lib_dominio.pdb
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repo.15A77F64.Up2Date
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repositorio.dll
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\refint\Lib_repositorio.dll
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\Lib_repositorio.pdb
+C:\Users\Autokars\OneDrive\Escritorio\gym\Lib_repositorio\obj\Debug\net8.0\ref\Lib_repositorio.dll

@@ -1,0 +1,33 @@
+﻿
+using Lib_dominio.Entidades;
+using lib_repositorios.Interfaces;
+using Microsoft.EntityFrameworkCore;
+namespace lib_repositorios.Implementaciones
+{
+    public partial class Conexion : DbContext, IConexion
+    {
+        public string? StringConexion { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(this.StringConexion!, p => { });
+            optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+        }
+        public DbSet<Planes>?Planes { get; set; }
+        public DbSet<Sedes>?Sedes { get; set; }
+
+        public DbSet<Estados_pagos>? Estados_pagos { get; set; }
+
+        public DbSet<Estados_Inscripciones>? Estados_Inscripciones { get; set; }
+
+        public DbSet<Planes_Sedes>? Planes_Sedes { get; set; }
+
+       public DbSet<Personas>? Personas { get; set; }
+
+        public DbSet<Inscripciones>? Inscripciones { get; set; }
+
+        public DbSet<Pagos>? Pagos { get; set; }
+
+        public DbSet<Observaciones>? Observaciones {  get; set; }
+
+    }
+}

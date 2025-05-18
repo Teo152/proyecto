@@ -1,0 +1,16 @@
+﻿<Project Sdk="MSTest.Sdk/3.6.4">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseVSTest>true</UseVSTest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib_dominio\Lib_dominio.csproj" />
+    <ProjectReference Include="..\Lib_repositorio\Lib_repositorio.csproj" />
+  </ItemGroup>
+
+</Project>
