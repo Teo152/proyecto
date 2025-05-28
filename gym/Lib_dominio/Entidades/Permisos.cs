@@ -9,7 +9,7 @@ namespace Lib_dominio.Entidades
 {
     public class Permisos
     {
-        public int Id { get; set; }
-        public string? Nombre { get; set; }
+        public int id { get; set; }
+        public string? nombre { get; set; }
     }
 }

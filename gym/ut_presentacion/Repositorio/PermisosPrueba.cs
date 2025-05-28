@@ -37,7 +37,7 @@ namespace ut_presentacion.Repositorio
         {
             this.entidad = new Permisos
             {
-                Nombre = "AccesoPanelControl",
+                nombre = "AccesoPanelControl",
             };
 
             this.iConexion!.Permisos!.Add(this.entidad);
@@ -47,7 +47,7 @@ namespace ut_presentacion.Repositorio
 
         public bool Modificar()
         {
-            this.entidad!.Nombre = "AccesoModificado";
+            this.entidad!.nombre = "AccesoModificado";
 
             var entry = this.iConexion!.Entry<Permisos>(this.entidad);
             entry.State = EntityState.Modified;

@@ -37,8 +37,8 @@ namespace ut_presentacion.Repositorio
         {
             this.entidad = new Roles_Permisos
             {
-                Rol = 1,        // Id del rol existente
-                Permiso = 1     // Id del permiso existente
+                rol = 1,        // Id del rol existente
+                permiso = 1     // Id del permiso existente
             };
 
             this.iConexion!.Roles_Permisos!.Add(this.entidad);
@@ -48,7 +48,7 @@ namespace ut_presentacion.Repositorio
 
         public bool Modificar()
         {
-            this.entidad!.Permiso = 2; // Cambiar el permiso, por ejemplo
+            this.entidad!.permiso = 2; // Cambiar el permiso, por ejemplo
 
             var entry = this.iConexion!.Entry<Roles_Permisos>(this.entidad);
             entry.State = EntityState.Modified;

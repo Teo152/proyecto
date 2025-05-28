@@ -5,18 +5,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Lib_dominio.Entidades
 {
     public  class Roles_Permisos
     {
-        public int Id { get; set; }
+        public int id { get; set; }
 
-        public int Rol { get; set; }
+       public string? codigo { get; set; }
 
-        public int Permiso { get; set; }
+        public int rol { get; set; }
 
-        [ForeignKey("Rol")]public Roles? _Rol { get; set; }
-        [ForeignKey("Permiso")] public Permisos? _Permiso { get; set; }
+        public int permiso { get; set; }
+
+        [ForeignKey("rol")][JsonIgnore] public Roles? _rol { get; set; }
+        [ForeignKey("permiso")][JsonIgnore] public Permisos? _permiso { get; set; }
     }
 }

@@ -37,7 +37,7 @@ namespace ut_presentacion.Repositorio
         {
             this.entidad = new Usuarios
             {
-                NombreUsuario = "prueba1",
+                nombreUsuario = "prueba1",
                 Contrasena = "123456",
                 Rol = 1
             };
@@ -49,7 +49,7 @@ namespace ut_presentacion.Repositorio
 
         public bool Modificar()
         {
-            this.entidad!.NombreUsuario = "NombreUsuarioModificado";
+            this.entidad!.nombreUsuario = "NombreUsuarioModificado";
 
             var entry = this.iConexion!.Entry<Usuarios>(this.entidad);
             entry.State = EntityState.Modified;

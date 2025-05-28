@@ -192,9 +192,9 @@ VALUES
 
 --  insertar en  roles, permisos, usuarios y auditoría si lo deseas
 -- Ejemplo:
--- INSERT INTO Roles (Nombre) VALUES ('Admin'), ('Empleado');
--- INSERT INTO Permisos (Nombre) VALUES ('Crear'), ('Leer'), ('Actualizar'), ('Eliminar');
--- INSERT INTO Usuarios (NombreUsuario, Contrasena, Rol) VALUES ('admin', '1234', 1);
--- INSERT INTO Roles_Permisos (Rol, Permiso) VALUES (1,1), (1,2);
--- INSERT INTO Auditoria (Usuario, FechaHora, Accion) VALUES (1, GETDATE(), 'Inicio de sesión');
+ INSERT INTO Roles (Nombre) VALUES ('Admin'), ('Empleado');
+ INSERT INTO Permisos (Nombre) VALUES ('Crear'), ('Leer'), ('Actualizar'), ('Eliminar');
+ INSERT INTO Usuarios (NombreUsuario, Contrasena, Rol) VALUES ('admin', '1234', 1);
+ INSERT INTO Roles_Permisos (Rol, Permiso) VALUES (1,1), (1,2);
+ INSERT INTO Auditoria (Usuario, FechaHora, Accion) VALUES (1, GETDATE(), 'Inicio de sesión');
 

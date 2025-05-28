@@ -23,3 +23,16 @@ C:\Users\Dahiana\Desktop\Proyecto\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_
 C:\Users\Dahiana\Desktop\Proyecto\proyecto\gym\Lib_dominio\obj\Debug\net8.0\refint\Lib_dominio.dll
 C:\Users\Dahiana\Desktop\Proyecto\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.pdb
 C:\Users\Dahiana\Desktop\Proyecto\proyecto\gym\Lib_dominio\obj\Debug\net8.0\ref\Lib_dominio.dll
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\bin\Debug\net8.0\Lib_dominio.deps.json
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\bin\Debug\net8.0\Lib_dominio.dll
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\bin\Debug\net8.0\Lib_dominio.pdb
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.csproj.AssemblyReference.cache
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.AssemblyInfoInputs.cache
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.AssemblyInfo.cs
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.csproj.CoreCompileInputs.cache
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.sourcelink.json
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.dll
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\refint\Lib_dominio.dll
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\Lib_dominio.pdb
+C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_dominio\obj\Debug\net8.0\ref\Lib_dominio.dll

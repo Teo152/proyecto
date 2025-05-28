@@ -101,7 +101,7 @@ namespace ut_presentacion.Nucleo
         {
             return new Roles
             {
-                Nombre = "Administrador"
+                nombre = "Administrador"
             };
         }
 
@@ -109,7 +109,7 @@ namespace ut_presentacion.Nucleo
         {
             return new Permisos
             {
-                Nombre = "AccesoPanelControl"
+                nombre = "AccesoPanelControl"
             };
         }
 
@@ -117,8 +117,8 @@ namespace ut_presentacion.Nucleo
         {
             return new Roles_Permisos
             {
-                Rol = 1,
-                Permiso = 1
+                rol = 1,
+                permiso = 1
             };
         }
 
@@ -126,7 +126,7 @@ namespace ut_presentacion.Nucleo
         {
             return new Usuarios
             {
-                NombreUsuario = "admin1",
+                nombreUsuario = "admin1",
                 Contrasena = "123456",
                 Rol = 1
             };

@@ -10,7 +10,7 @@ namespace Lib_dominio.Entidades
 {
     public class Auditoria
     {
-        public int Id { get; set; }
+        public int id { get; set; }
         public int Usuario { get; set; }
         public DateTime FechaHora { get; set; }
         public string? Accion { get; set; }

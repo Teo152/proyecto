@@ -9,8 +9,8 @@ namespace Lib_dominio.Entidades
 {
     public class Roles
     {
-        [Key] public int Id { get; set; }
-        public string? Nombre { get; set; } 
+        [Key] public int id { get; set; }
+        public string? nombre { get; set; } 
 
     }
 }

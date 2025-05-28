@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Lib_dominio.Entidades
 {
@@ -20,6 +21,6 @@ namespace Lib_dominio.Entidades
 
         public int? planes { get; set; }
 
-        [ForeignKey("planes")] public Planes? _planes { get; set; }
+        [ForeignKey("planes")][JsonIgnore] public Planes? _planes { get; set; }
     }
 }

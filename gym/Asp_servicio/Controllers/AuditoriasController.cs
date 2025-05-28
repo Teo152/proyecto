@@ -1,0 +1,62 @@
+﻿
+using lib_aplicaciones.Interfaces;
+using Lib_dominio.Entidades;
+using lib_dominio.Nucleo;
+using Microsoft.AspNetCore.Mvc;
+using Asp_servicio.Nucleo;
+
+
+
+
+namespace Asp_servicio.Controllers
+{
+    [ApiController]
+    [Route("[controller]/[action]")]
+    public class AuditoriaController : ControllerBase
+    {
+        private IAuditoriaAplicacion? iAplicacion = null;
+        private TokenController? tokenController = null;
+        public AuditoriaController(IAuditoriaAplicacion? iAplicacion,
+        TokenController tokenController)
+        {
+            this.iAplicacion = iAplicacion;
+            this.tokenController = tokenController;
+        }
+        private Dictionary<string, object> ObtenerDatos()
+        {
+            var datos = new StreamReader(Request.Body).ReadToEnd().ToString();
+            if (string.IsNullOrEmpty(datos))
+                datos = "{}";
+            return JsonConversor.ConvertirAObjeto(datos);
+        }
+        [HttpPost]
+        public string Listar()
+        {
+            var respuesta = new Dictionary<string, object>();
+            try
+            {
+                var datos = ObtenerDatos();
+                if (!tokenController!.Validate(datos))
+                {
+                    respuesta["Error"] = "lbNoAutenticacion";
+                    return JsonConversor.ConvertirAString(respuesta);
+                }
+                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion"));
+                respuesta["Entidades"] = this.iAplicacion!.Listar();
+                respuesta["Respuesta"] = "OK";
+                respuesta["Fecha"] = DateTime.Now.ToString();
+                return JsonConversor.ConvertirAString(respuesta);
+            }
+            catch (Exception ex)
+            {
+                respuesta["Error"] = ex.Message.ToString();
+                return JsonConversor.ConvertirAString(respuesta);
+            }
+        }
+        
+
+
+    
+        
+    }
+}
