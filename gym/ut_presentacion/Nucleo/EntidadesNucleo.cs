@@ -6,107 +6,150 @@ namespace ut_presentacion.Nucleo
     {
         public static Planes? Planes()
         {
-            var entidad = new Planes();
-
-            entidad.nombre = " Plan Gold";
-            entidad.detalle = "Acceso a todas las sedes, entrenadores personalizados y derecho a 2 invitados por mes.";
-            entidad.precio = 100000.00M; ;
-
-
-            return entidad;
+            return new Planes
+            {
+                nombre = "Plan Gold",
+                detalle = "Acceso a todas las sedes, entrenadores personalizados y derecho a 2 invitados por mes.",
+                precio = 100000.00M
+            };
         }
 
         public static Sedes? Sedes()
         {
-            var entidad = new Sedes();
-
-            entidad.nombre = "Florida";
-            entidad.direccion="calle 23 55";
-
-
-            return entidad;
+            return new Sedes
+            {
+                nombre = "Florida",
+                direccion = "Calle 23 #55"
+            };
         }
 
         public static Estados_pagos? Estados_pagos()
         {
-            var entidad = new Estados_pagos();
-
-            entidad.estado = "Pagado";
-            entidad.metodo_pago = "Efectivo";
-
-
-            return entidad;
+            return new Estados_pagos
+            {
+                estado = "Pagado",
+                metodo_pago = "Efectivo"
+            };
         }
 
         public static Estados_Inscripciones? Estados_Inscripciones()
         {
-            var entidad = new Estados_Inscripciones();
-
-            entidad.estado = "Inscrito";
-            entidad.descripcion = "Usuario con acceso activo";
-
-
-            return entidad;
+            return new Estados_Inscripciones
+            {
+                estado = "Inscrito",
+                descripcion = "Usuario con acceso activo"
+            };
         }
 
         public static Planes_Sedes? Planes_Sedes()
         {
-            var entidad = new Planes_Sedes();
-            entidad.tipo_acceso = "Todas";
-            entidad.sedes = 1;
-            entidad.planes = 1;
-           
-
-            return entidad;
+            return new Planes_Sedes
+            {
+                tipo_acceso = "Todas",
+                sedes = 1,
+                planes = 1
+            };
         }
 
         public static Personas? Personas()
         {
-            var entidad = new Personas();
-            entidad.nombre = "Juan Pérez";
-            entidad.cedula = 1234567890;
-            entidad.telefono = 2345432;
-            entidad.email = "juan.perez@example.com";
-            entidad.planes = 1;
-
-
-            return entidad;
+            return new Personas
+            {
+                nombre = "Juan Pérez",
+                cedula = 1234567890,
+                telefono = 2345432,
+                email = "juan.perez@example.com",
+                planes = 1
+            };
         }
 
         public static Inscripciones? Inscripciones()
         {
-            var entidad = new Inscripciones();
-            entidad.personas = 1;
-            entidad.estados_inscripciones = 1;
-            entidad.planes_sedes = 1 ;
-            entidad.fecha_inscripcion = DateTime.Now;
-            entidad.fecha_vencimiento = DateTime.Now.AddMonths(1);
-            return entidad;
+            return new Inscripciones
+            {
+             
+                personas = 1,
+                estados_inscripciones = 1,
+                planes_sedes = 1,
+                fecha_inscripcion = DateTime.Now,
+                fecha_vencimiento = DateTime.Now.AddMonths(1)
+            };
         }
 
         public static Pagos? Pagos()
         {
-            var entidad = new Pagos();
-            entidad.inscripciones = 1;
-            entidad.estados_pagos= 1;
-            entidad.monto = 70000;
-            entidad.fecha_pago = new DateTime(2025, 4, 15);
-
-
-            return entidad;
+            return new Pagos
+            {
+                inscripciones = 1,
+                estados_pagos = 1,
+                monto = 70000,
+                fecha_pago = new DateTime(2025, 4, 15)
+            };
         }
 
         public static Observaciones? Observaciones()
         {
-            var entidad = new Observaciones();
-            entidad.inscripciones = 1;
-            entidad.descripcion = "Inscripción completada.";
-
-
-            return entidad;
+            return new Observaciones
+            {
+                inscripciones = 1,
+                descripcion = "Inscripción completada."
+            };
         }
 
+        //  Seguridad y gestión de usuarios
+        public static Roles? Roles()
+        {
+            return new Roles
+            {
+                Nombre = "Administrador"
+            };
+        }
 
+        public static Permisos? Permisos()
+        {
+            return new Permisos
+            {
+                Nombre = "AccesoPanelControl"
+            };
+        }
 
+        public static Roles_Permisos? Roles_Permisos()
+        {
+            return new Roles_Permisos
+            {
+                Rol = 1,
+                Permiso = 1
+            };
+        }
+
+        public static Usuarios? Usuarios()
+        {
+            return new Usuarios
+            {
+                NombreUsuario = "admin1",
+                Contrasena = "123456",
+                Rol = 1
+            };
+        }
+
+        public static Empleados? Empleados()
+        {
+            return new Empleados
+            {
+                cedula = 11223344,
+                nombre = "Carlos López",
+                sedes = 1
+            };
+        }
+
+        public static Auditoria? Auditoria()
+        {
+            return new Auditoria
+            {
+                Usuario = 1,
+                FechaHora = DateTime.Now,
+                Accion = "Creación de usuario"
+            };
+        }
     }
 }

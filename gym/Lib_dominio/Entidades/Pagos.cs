@@ -10,13 +10,13 @@ namespace Lib_dominio.Entidades
     {
      public int id {  get; set; }
 
-    public int inscripciones { get; set; }
+     public int inscripciones { get; set; }
 
-        public int estados_pagos {  get; set; }
+     public int estados_pagos {  get; set; }
 
-        public decimal monto { get; set; }
+     public decimal monto { get; set; }
 
-        public DateTime? fecha_pago {  get; set; }
+     public DateTime? fecha_pago {  get; set; }
 
     }
 }

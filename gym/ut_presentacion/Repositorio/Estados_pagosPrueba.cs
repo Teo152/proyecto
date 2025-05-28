@@ -7,14 +7,14 @@ using ut_presentacion.Nucleo;
 namespace ut_presentacion;
 
 [TestClass]
-public class Estado_pagosPrueba
+public class Estados_pagosPrueba
 {
 
     private readonly IConexion? iConexion;
     private List<Estados_pagos>? lista;
     private Estados_pagos? entidad;
 
-    public Estado_pagosPrueba()
+    public Estados_pagosPrueba()
     {
         iConexion = new Conexion();
         iConexion.StringConexion = Configuracion.ObtenerValor("StringConexion");

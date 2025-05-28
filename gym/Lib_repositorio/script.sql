@@ -1,197 +1,200 @@
+-- Crear la base de datos
 CREATE DATABASE db_gym;
-go
+GO
 
 USE db_gym;
 GO
+
+-- TABLAS PRINCIPALES -----------------------------------------
+
 CREATE TABLE [Planes] (
 	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[Nombre] NVARCHAR(50) NOT NULL,
 	[Precio] DECIMAL(10,2) NOT NULL,
-	[Detalle] NVARCHAR(200),
+	[Detalle] NVARCHAR(200)
 );
 
-CREATE TABLE [Sedes](
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[Nombre] NVARCHAR(50) NOT NULL,
-[direccion] NVARCHAR(50)
+CREATE TABLE [Sedes] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Nombre] NVARCHAR(50) NOT NULL,
+	[direccion] NVARCHAR(50)
 );
 
-CREATE TABLE [Estados_pagos](
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[estado] NVARCHAR(50) NOT NULL,
-[metodo_pago] NVARCHAR(50)
+CREATE TABLE [Estados_pagos] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[estado] NVARCHAR(50) NOT NULL,
+	[metodo_pago] NVARCHAR(50)
 );
 
-CREATE TABLE [Estados_Inscripciones](
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[estado] NVARCHAR(50) NOT NULL,
-[descripcion] NVARCHAR(50)
+CREATE TABLE [Estados_Inscripciones] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[estado] NVARCHAR(50) NOT NULL,
+	[descripcion] NVARCHAR(50)
 );
 
-
-
-CREATE TABLE [Planes_Sedes](
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[sedes] INT  REFERENCES [Sedes]([id]),
-[planes] INT  REFERENCES [planes]([id]),
-[tipo_acceso] NVARCHAR(50)
-
+CREATE TABLE [Planes_Sedes] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[sedes] INT REFERENCES [Sedes]([Id]),
+	[planes] INT REFERENCES [Planes]([Id]),
+	[tipo_acceso] NVARCHAR(50)
 );
 
-CREATE TABLE [Personas](
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[nombre] NVARCHAR(50),
-[cedula] int,
-[telefono] int,
-[email] NVARCHAR(50),
-[planes] INT NULL REFERENCES [planes]([id] )
+CREATE TABLE [Personas] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[nombre] NVARCHAR(50),
+	[cedula] INT,
+	[telefono] INT,
+	[email] NVARCHAR(50),
+	[planes] INT NULL REFERENCES [Planes]([Id])
 );
 
-CREATE TABLE [Inscripciones](
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[personas] INT REFERENCES [personas]([id]),
-[planes_sedes] INT NULL REFERENCES [planes_sedes]([id] ),
-[Estados_Inscripciones] INT REFERENCES [Estados_Inscripciones]([id]),
-[fecha_inscripcion] datetime,
-[fecha_vencimiento] datetime null
+CREATE TABLE [Inscripciones] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[personas] INT REFERENCES [Personas]([Id]),
+	[planes_sedes] INT NULL REFERENCES [Planes_Sedes]([Id]),
+	[Estados_Inscripciones] INT REFERENCES [Estados_Inscripciones]([Id]),
+	[fecha_inscripcion] DATETIME,
+	[fecha_vencimiento] DATETIME NULL
 );
 
-
-CREATE TABLE [Pagos](
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[inscripciones] INT REFERENCES [Inscripciones]([id]),
-[Estados_Pagos] INT REFERENCES [Estados_Inscripciones]([id]),
-[monto] decimal (10,2),
-[fecha_pago] datetime null
+CREATE TABLE [Pagos] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[inscripciones] INT REFERENCES [Inscripciones]([Id]),
+	[Estados_Pagos] INT REFERENCES [Estados_pagos]([Id]),
+	[monto] DECIMAL(10,2),
+	[fecha_pago] DATETIME NULL
 );
-
 
 CREATE TABLE [Observaciones] (
-[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-[inscripciones] INT REFERENCES [Inscripciones]([id]),
-[descripcion] NVARCHAR(50)
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[inscripciones] INT REFERENCES [Inscripciones]([Id]),
+	[descripcion] NVARCHAR(50)
 );
 
+CREATE TABLE [Empleados] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[cedula] INT NOT NULL,
+	[Nombre] NVARCHAR(50) NOT NULL,
+	[sedes] INT REFERENCES [Sedes]([Id])
+);
 
+-- NUEVAS TABLAS DE SEGURIDAD ---------------------------------
+
+CREATE TABLE [Roles] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Nombre] NVARCHAR(50)
+);
+
+CREATE TABLE [Permisos] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Nombre] NVARCHAR(50)
+);
+
+CREATE TABLE [Usuarios] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[NombreUsuario] NVARCHAR(50),
+	[Contrasena] NVARCHAR(50),
+	[Rol] INT REFERENCES [Roles]([Id])
+);
+
+CREATE TABLE [Roles_Permisos] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Rol] INT REFERENCES [Roles]([Id]),
+	[Permiso] INT REFERENCES [Permisos]([Id])
+);
+
+CREATE TABLE [Auditoria] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Usuario] INT REFERENCES [Usuarios]([Id]),
+	[FechaHora] DATETIME,
+	[Accion] NVARCHAR(100)
+);
+
+-- INSERTS -----------------------------------------------------
+
+-- PLANES
 INSERT INTO [Planes] ([Nombre],[Precio],[Detalle])
-VALUES ('Plan Premium',90000.00,'Acceso a todas las sedes,entrenadores,derecho a 2 invitados por mes.');
+VALUES 
+('Plan Premium',90000.00,'Acceso a todas las sedes,entrenadores,derecho a 2 invitados por mes.'),
+('Plan Básico',70000.00, 'Acceso limitado a ciertas sedes,sin derecho a invitados.');
 
-INSERT INTO [Planes] ([Nombre],[Precio],[Detalle])
-VALUES ('Plan Básico',70000.00, 'Acceso limitado a ciertas sedes,sin derecho a invitados.');
-
-SELECT * FROM [Planes];
-
-
+-- SEDES
 INSERT INTO [Sedes] ([Nombre],[direccion])
-VALUES ('Medellin,','calle 123 # 45-67');
-INSERT INTO [Sedes] ([Nombre],[direccion])
-VALUES ('Bello,','carrera 56 # 12-34');
-INSERT INTO [Sedes] ([Nombre],[direccion])
-VALUES ('Sabaneta,','avenida 78 # 90-12');
+VALUES 
+('Medellin','calle 123 # 45-67'),
+('Bello','carrera 56 # 12-34'),
+('Sabaneta','avenida 78 # 90-12');
 
-SELECT * FROM Sedes;
-
-
-
-
+-- ESTADOS DE PAGO
 INSERT INTO [Estados_pagos] ([estado],[metodo_pago])
-VALUES ('Pagado,','Targeta');
-INSERT INTO [Estados_pagos] ([estado],[metodo_pago])
-VALUES ('Pendiente,','Efectivo');
-INSERT INTO [Estados_pagos] ([estado],[metodo_pago])
-VALUES ('No aplica,','No aplica');
+VALUES 
+('Pagado','Tarjeta'),
+('Pendiente','Efectivo'),
+('No aplica','No aplica');
 
-
-select * from Estados_pagos
-
-
-
-
-
+-- ESTADOS DE INSCRIPCIÓN
 INSERT INTO [Estados_Inscripciones] ([estado],[descripcion])
-VALUES ('Inscrito,','Usuario con acceso activo');
-INSERT INTO [Estados_Inscripciones] ([estado],[descripcion])
-VALUES ('Invitado,','Ucceso temporal');
-INSERT INTO [Estados_Inscripciones] ([estado],[descripcion])
-VALUES ('Cancelado,','Inscripcion anulada');
+VALUES 
+('Inscrito','Usuario con acceso activo'),
+('Invitado','Acceso temporal'),
+('Cancelado','Inscripción anulada');
 
-SELECT * FROM [Estados_inscripciones]
-
-
+-- PLANES_SEDES
 INSERT INTO [Planes_Sedes] ([sedes],[planes], [tipo_acceso])
-VALUES (1,1,'Todas');
-INSERT INTO [Planes_Sedes] ([sedes],[planes], [tipo_acceso])
-VALUES (2,1,'Todas');
-INSERT INTO [Planes_Sedes] ([sedes],[planes], [tipo_acceso])
-VALUES (2,2,'Limitada');
-INSERT INTO [Planes_Sedes] ([sedes],[planes], [tipo_acceso])
-VALUES (3,2,'Limitada');
+VALUES 
+(1,1,'Todas'),
+(2,1,'Todas'),
+(2,2,'Limitada'),
+(3,2,'Limitada');
 
-SELECT * FROM planes_sedes
+-- PERSONAS
+INSERT INTO [Personas] ([nombre],[cedula], [telefono],[email],[planes])
+VALUES 
+('juan', 10001234, 30012345,'juan@emqail.com',1),
+('maria', 10009876, 30198765,'maria@emqail.com',2),
+('carlos', 10004567, 30234567,'carlos@emqail.com',NULL),
+('ana', 10006789, 30345678,'ana@emqail.com',1),
+('pedro', 10002345, 30456789,'pedro@emqail.com',1);
 
-
-INSERT INTO [Personas] ([nombre],[cedula], [telefono],email,planes)
-VALUES ('juan', 10001234, 30012345,'juan@emqail.com',1);
-INSERT INTO [Personas] ([nombre],[cedula], [telefono],email,planes)
-VALUES ('maria', 10009876, 30198765,'maria@emqail.com',2);
-INSERT INTO [Personas] ([nombre],[cedula], [telefono],email,planes)
-VALUES ('carlos', 10004567, 30234567,'carlos@emqail.com',null);
-INSERT INTO [Personas] ([nombre],[cedula], [telefono],email,planes)
-VALUES ('ana', 10006789, 30345678,'ana@emqail.com',1);
-INSERT INTO [Personas] ([nombre],[cedula], [telefono],email,planes)
-VALUES ('pedro', 10002345, 30456789,'pedro@emqail.com',1);
-
-SELECT * FROM Personas
-
-
-
-
-
-
+-- INSCRIPCIONES
 INSERT INTO [Inscripciones] ([personas], [planes_Sedes],[estados_inscripciones],[fecha_inscripcion],[fecha_vencimiento])
-VALUES (1,1,1,'2025-01-01','2025-06-03')
-INSERT INTO [Inscripciones] ([personas], [planes_Sedes],[estados_inscripciones],[fecha_inscripcion],[fecha_vencimiento])
-VALUES (2,3,1,'2025-02-10','2025-10-07')
-INSERT INTO [Inscripciones] ([personas], [planes_Sedes],[estados_inscripciones],[fecha_inscripcion],[fecha_vencimiento])
-VALUES (3,null,2,'2025-01-01',null)
-INSERT INTO [Inscripciones] ([personas], [planes_Sedes],[estados_inscripciones],[fecha_inscripcion],[fecha_vencimiento])
-VALUES (4,2,1,'2025-01-10','2025-07-10')
-INSERT INTO [Inscripciones] ([personas], [planes_Sedes],[estados_inscripciones],[fecha_inscripcion],[fecha_vencimiento])
-VALUES (5,4,3,'2025-04-01',null)
+VALUES 
+(1,1,1,'2025-01-01','2025-06-03'),
+(2,3,1,'2025-02-10','2025-10-07'),
+(3,NULL,2,'2025-01-01',NULL),
+(4,2,1,'2025-01-10','2025-07-10'),
+(5,4,3,'2025-04-01',NULL);
 
-select * from Inscripciones
-
-
-
-
+-- PAGOS
 INSERT INTO [Pagos] ([inscripciones], [Estados_Pagos],[monto],[fecha_pago])
-VALUES (1,1,90.000,'2025-02-02')
-INSERT INTO [Pagos] ([inscripciones], [Estados_Pagos],[monto],[fecha_pago])
-VALUES (2,2,70.000,NULL)
-INSERT INTO [Pagos] ([inscripciones], [Estados_Pagos],[monto],[fecha_pago])
-VALUES (3,3,0,null)
-INSERT INTO [Pagos] ([inscripciones], [Estados_Pagos],[monto],[fecha_pago])
-VALUES (3,1,90.000,'2025-12-12')
-INSERT INTO [Pagos] ([inscripciones], [Estados_Pagos],[monto],[fecha_pago])
-VALUES (5,2,0,null)
+VALUES 
+(1,1,90000.00,'2025-02-02'),
+(2,2,70000.00,NULL),
+(3,3,0,NULL),
+(3,1,90000.00,'2025-12-12'),
+(5,2,0,NULL);
 
-SELECT * FROM Pagos
-
-
-
-
-
-
-
+-- OBSERVACIONES
 INSERT INTO [Observaciones] ([inscripciones], [descripcion])
-VALUES (1,'sin novedades')
-INSERT INTO [Observaciones] ([inscripciones], [descripcion])
-VALUES (2,'pago pendiente')
-INSERT INTO [Observaciones] ([inscripciones], [descripcion])
-VALUES (3,'acceso limitado')
-INSERT INTO [Observaciones] ([inscripciones], [descripcion])
-VALUES (3,'renovacion proxima')
-INSERT INTO [Observaciones] ([inscripciones], [descripcion])
-VALUES (5,'cancelo')
+VALUES 
+(1,'sin novedades'),
+(2,'pago pendiente'),
+(3,'acceso limitado'),
+(3,'renovacion proxima'),
+(5,'cancelo');
 
-SELECT* FROM [Observaciones]
+-- EMPLEADOS
+INSERT INTO [Empleados] ([cedula], [nombre], [sedes])
+VALUES 
+(1234,'Alejandro',1),
+(3214,'Estefania',2),
+(5678,'Sara',3);
+
+--  insertar en  roles, permisos, usuarios y auditoría si lo deseas
+-- Ejemplo:
+-- INSERT INTO Roles (Nombre) VALUES ('Admin'), ('Empleado');
+-- INSERT INTO Permisos (Nombre) VALUES ('Crear'), ('Leer'), ('Actualizar'), ('Eliminar');
+-- INSERT INTO Usuarios (NombreUsuario, Contrasena, Rol) VALUES ('admin', '1234', 1);
+-- INSERT INTO Roles_Permisos (Rol, Permiso) VALUES (1,1), (1,2);
+-- INSERT INTO Auditoria (Usuario, FechaHora, Accion) VALUES (1, GETDATE(), 'Inicio de sesión');
+

@@ -29,5 +29,13 @@ namespace lib_repositorios.Implementaciones
 
         public DbSet<Observaciones>? Observaciones {  get; set; }
 
+        public DbSet<Empleados> Empleados { get; set; }
+
+        public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Roles> Roles { get; set; }
+        public DbSet<Permisos> Permisos { get; set; }
+        public DbSet<Roles_Permisos> Roles_Permisos { get; set; }
+        public DbSet<Auditoria> Auditoria { get; set; }
+
     }
 }
