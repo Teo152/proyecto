@@ -27,6 +27,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se eliminó un Rol.");
+
             this.IConexion!.Roles!.Remove(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -39,6 +41,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad.id != 0)
                 throw new Exception("lbYaSeGuardo");
 
+            GuardarAuditoria("Se guardó un nuevo Rol.");
+
             this.IConexion!.Roles!.Add(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -49,7 +53,7 @@ namespace lib_aplicaciones.Implementaciones
             return this.IConexion!.Roles!.Take(20).ToList();
         }
 
-        public List<Roles> PorCodigo(Roles? entidad)
+        public List<Roles> PorNombre(Roles? entidad)
         {
             return this.IConexion!.Roles!
             .Where(x => x.nombre!.Contains(entidad!.nombre!))
@@ -63,6 +67,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se modificó un Rol.");
+
             var entry = this.IConexion!.Entry<Roles>(entidad);
             entry.State = EntityState.Modified;
             this.IConexion.SaveChanges();
@@ -70,7 +76,20 @@ namespace lib_aplicaciones.Implementaciones
         }
 
 
+        public void GuardarAuditoria(string? accion)
+        {
+            var con = this.IConexion.Auditoria;
+            var entidad = new Auditoria();
+            {
+                entidad.Usuario = 1;
+                entidad.Accion = accion;
+                entidad.FechaHora = DateTime.Now;
+            }
+            ;
+            this.IConexion.Auditoria.Add(entidad);
 
+
+        }
 
     }
 }

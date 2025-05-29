@@ -6,7 +6,7 @@ namespace lib_aplicaciones.Interfaces
     public interface IPlanesAplicacion
     {
         void Configurar(string StringConexion);
-        List<Planes> PorCodigo(Planes? entidad);
+        List<Planes> PorNombre(Planes? entidad);
         List<Planes> Listar();
         Planes? Guardar(Planes? entidad);
         Planes? Modificar(Planes? entidad);

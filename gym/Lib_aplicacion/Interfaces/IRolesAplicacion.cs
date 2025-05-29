@@ -6,7 +6,7 @@ namespace lib_aplicaciones.Interfaces
     public interface IRolesAplicacion
     {
         void Configurar(string StringConexion);
-        List<Roles> PorCodigo(Roles? entidad);
+        List<Roles> PorNombre(Roles? entidad);
         List<Roles> Listar();
         Roles? Guardar(Roles? entidad);
         Roles? Modificar(Roles? entidad);

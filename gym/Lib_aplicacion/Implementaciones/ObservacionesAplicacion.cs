@@ -26,6 +26,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se eliminó una Observación.");
+
             this.IConexion!.Observaciones!.Remove(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -38,6 +40,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad.id != 0)
                 throw new Exception("lbYaSeGuardo");
 
+            GuardarAuditoria("Se guardó una nueva Observación.");
+
             this.IConexion!.Observaciones!.Add(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -48,7 +52,7 @@ namespace lib_aplicaciones.Implementaciones
             return this.IConexion!.Observaciones!.Take(20).ToList();
         }
 
-        public List<Observaciones> PorCodigo(Observaciones? entidad)
+        public List<Observaciones> PorDescripcion(Observaciones? entidad)
         {
             return this.IConexion!.Observaciones!
             .Where(x => x.descripcion!.Contains(entidad!.descripcion!))
@@ -62,13 +66,28 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se modificó una Observación.");
+
             var entry = this.IConexion!.Entry<Observaciones>(entidad);
             entry.State = EntityState.Modified;
             this.IConexion.SaveChanges();
             return entidad;
         }
 
+        public void GuardarAuditoria(string? accion)
+        {
+            var con = this.IConexion.Auditoria;
+            var entidad = new Auditoria();
+            {
+                entidad.Usuario = 1;
+                entidad.Accion = accion;
+                entidad.FechaHora = DateTime.Now;
+            }
+            ;
+            this.IConexion.Auditoria.Add(entidad);
 
+
+        }
 
 
     }

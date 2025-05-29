@@ -26,6 +26,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se eliminó un Pago.");
+
             this.IConexion!.Pagos!.Remove(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -37,6 +39,8 @@ namespace lib_aplicaciones.Implementaciones
                 throw new Exception("lbFaltaInformacion");
             if (entidad.id != 0)
                 throw new Exception("lbYaSeGuardo");
+
+            GuardarAuditoria("Se guardó un nuevo Pago.");
 
             this.IConexion!.Pagos!.Add(entidad);
             this.IConexion.SaveChanges();
@@ -62,12 +66,27 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se modificó un Pago.");
+
             var entry = this.IConexion!.Entry<Pagos>(entidad);
             entry.State = EntityState.Modified;
             this.IConexion.SaveChanges();
             return entidad;
         }
 
-        
+        public void GuardarAuditoria(string? accion)
+        {
+            var con = this.IConexion.Auditoria;
+            var entidad = new Auditoria();
+            {
+                entidad.Usuario = 1;
+                entidad.Accion = accion;
+                entidad.FechaHora = DateTime.Now;
+            }
+            ;
+            this.IConexion.Auditoria.Add(entidad);
+
+
+        }
     }
 }

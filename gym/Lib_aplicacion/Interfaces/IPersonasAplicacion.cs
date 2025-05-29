@@ -6,7 +6,7 @@ namespace lib_aplicaciones.Interfaces
     public interface IPersonasAplicacion
     {
         void Configurar(string StringConexion);
-        List<Personas> PorCodigo(Personas? entidad);
+        List<Personas> PorNombre(Personas? entidad);
         List<Personas> Listar();
         Personas? Guardar(Personas? entidad);
 

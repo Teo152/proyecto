@@ -27,6 +27,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se eliminó un Permiso.");
+
             this.IConexion!.Permisos!.Remove(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -39,6 +41,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad.id != 0)
                 throw new Exception("lbYaSeGuardo");
 
+            GuardarAuditoria("Se guardó un nuevo Permiso.");
+
             this.IConexion!.Permisos!.Add(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -49,7 +53,7 @@ namespace lib_aplicaciones.Implementaciones
             return this.IConexion!.Permisos!.Take(20).ToList();
         }
 
-        public List<Permisos> PorCodigo(Permisos? entidad)
+        public List<Permisos> PorNombre(Permisos? entidad)
         {
             return this.IConexion!.Permisos!
             .Where(x => x.nombre!.Contains(entidad!.nombre!))
@@ -63,13 +67,28 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se modificó un Permiso.");
+
             var entry = this.IConexion!.Entry<Permisos>(entidad);
             entry.State = EntityState.Modified;
             this.IConexion.SaveChanges();
             return entidad;
         }
 
+        public void GuardarAuditoria(string? accion)
+        {
+            var con = this.IConexion.Auditoria;
+            var entidad = new Auditoria();
+            {
+                entidad.Usuario = 1;
+                entidad.Accion = accion;
+                entidad.FechaHora = DateTime.Now;
+            }
+            ;
+            this.IConexion.Auditoria.Add(entidad);
 
+
+        }
 
 
     }

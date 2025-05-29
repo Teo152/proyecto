@@ -26,6 +26,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se eliminó una Inscripción.");
+
             this.IConexion!.Inscripciones!.Remove(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -37,6 +39,8 @@ namespace lib_aplicaciones.Implementaciones
                 throw new Exception("lbFaltaInformacion");
             if (entidad.id != 0)
                 throw new Exception("lbYaSeGuardo");
+
+            GuardarAuditoria("Se guardó una nueva Inscripción.");
 
             this.IConexion!.Inscripciones!.Add(entidad);
             this.IConexion.SaveChanges();
@@ -62,13 +66,28 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se modificó una Inscripción.");
+
             var entry = this.IConexion!.Entry<Inscripciones>(entidad);
             entry.State = EntityState.Modified;
             this.IConexion.SaveChanges();
             return entidad;
         }
 
+        public void GuardarAuditoria(string? accion)
+        {
+            var con = this.IConexion.Auditoria;
+            var entidad = new Auditoria();
+            {
+                entidad.Usuario = 1;
+                entidad.Accion = accion;
+                entidad.FechaHora = DateTime.Now;
+            }
+            ;
+            this.IConexion.Auditoria.Add(entidad);
 
+
+        }
 
 
     }

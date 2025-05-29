@@ -26,6 +26,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se eliminó un Plan_Sede.");
+
             this.IConexion!.Planes_Sedes!.Remove(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -38,6 +40,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad.id != 0)
                 throw new Exception("lbYaSeGuardo");
 
+            GuardarAuditoria("Se guardó un nuevo Plan_Sede.");
+
             this.IConexion!.Planes_Sedes!.Add(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -48,7 +52,7 @@ namespace lib_aplicaciones.Implementaciones
             return this.IConexion!.Planes_Sedes!.Take(20).ToList();
         }
 
-        public List<Planes_Sedes> PorCodigo(Planes_Sedes? entidad)
+        public List<Planes_Sedes> PorTipoAcceso(Planes_Sedes? entidad)
         {
             return this.IConexion!.Planes_Sedes!
             .Where(x => x.tipo_acceso!.Contains(entidad!.tipo_acceso!))
@@ -62,12 +66,27 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se modificó un Plan_Sede.");
+
             var entry = this.IConexion!.Entry<Planes_Sedes>(entidad);
             entry.State = EntityState.Modified;
             this.IConexion.SaveChanges();
             return entidad;
         }
+        public void GuardarAuditoria(string? accion)
+        {
+            var con = this.IConexion.Auditoria;
+            var entidad = new Auditoria();
+            {
+                entidad.Usuario = 1;
+                entidad.Accion = accion;
+                entidad.FechaHora = DateTime.Now;
+            }
+            ;
+            this.IConexion.Auditoria.Add(entidad);
 
-     
+
+        }
+
     }
 }

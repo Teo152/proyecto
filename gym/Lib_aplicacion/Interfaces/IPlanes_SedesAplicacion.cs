@@ -6,7 +6,7 @@ namespace lib_aplicaciones.Interfaces
     public interface IPlanes_SedesAplicacion
     {
         void Configurar(string StringConexion);
-        List<Planes_Sedes> PorCodigo(Planes_Sedes? entidad);
+        List<Planes_Sedes> PorTipoAcceso(Planes_Sedes? entidad);
         List<Planes_Sedes> Listar();
         Planes_Sedes? Guardar(Planes_Sedes? entidad);
 

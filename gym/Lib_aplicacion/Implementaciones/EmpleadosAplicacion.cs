@@ -27,6 +27,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se eliminó un Empleado.");
+
             this.IConexion!.Empleados!.Remove(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -39,6 +41,8 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad.id != 0)
                 throw new Exception("lbYaSeGuardo");
 
+            GuardarAuditoria("Se guardó un nuevo Empleado.");
+
             this.IConexion!.Empleados!.Add(entidad);
             this.IConexion.SaveChanges();
             return entidad;
@@ -49,7 +53,7 @@ namespace lib_aplicaciones.Implementaciones
             return this.IConexion!.Empleados!.Take(20).ToList();
         }
 
-        public List<Empleados> PorCodigo(Empleados? entidad)
+        public List<Empleados> PorNombre(Empleados? entidad)
         {
             return this.IConexion!.Empleados!
             .Where(x => x.nombre!.Contains(entidad!.nombre!))
@@ -63,13 +67,28 @@ namespace lib_aplicaciones.Implementaciones
             if (entidad!.id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            GuardarAuditoria("Se modificó un Empleado.");
+
             var entry = this.IConexion!.Entry<Empleados>(entidad);
             entry.State = EntityState.Modified;
             this.IConexion.SaveChanges();
             return entidad;
         }
 
+        public void GuardarAuditoria(string? accion)
+        {
+            var con = this.IConexion.Auditoria;
+            var entidad = new Auditoria();
+            {
+                entidad.Usuario = 1;
+                entidad.Accion = accion;
+                entidad.FechaHora = DateTime.Now;
+            }
+            ;
+            this.IConexion.Auditoria.Add(entidad);
 
+
+        }
 
 
     }

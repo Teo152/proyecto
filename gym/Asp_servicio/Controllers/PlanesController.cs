@@ -53,7 +53,7 @@ namespace Asp_servicio.Controllers
             }
         }
         [HttpPost]
-        public string PorCodigo()
+        public string PorNombre()
         {
             var respuesta = new Dictionary<string, object>();
             try
@@ -67,7 +67,7 @@ namespace Asp_servicio.Controllers
                 var entidad = JsonConversor.ConvertirAObjeto<Planes>(
                 JsonConversor.ConvertirAString(datos["Entidad"]));
                 this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion"));
-                respuesta["Entidades"] = this.iAplicacion!.PorCodigo(entidad);
+                respuesta["Entidades"] = this.iAplicacion!.PorNombre(entidad);
                 respuesta["Respuesta"] = "OK";
                 respuesta["Fecha"] = DateTime.Now.ToString();
                 return JsonConversor.ConvertirAString(respuesta);
