@@ -36,3 +36,5 @@ C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_aplicacion\obj\Debug\net8
 C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_aplicacion\obj\Debug\net8.0\Lib_aplicacion.pdb
 C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_aplicacion\obj\Debug\net8.0\Lib_aplicacion.genruntimeconfig.cache
 C:\Users\Autokars\OneDrive\Escritorio\proyecto\gym\Lib_aplicacion\obj\Debug\net8.0\ref\Lib_aplicacion.dll
+C:\Users\Dahiana\Desktop\Proyecto\proyecto\gym\Lib_aplicacion\bin\Debug\net8.0\Lib_aplicacion.runtimeconfig.json
+C:\Users\Dahiana\Desktop\Proyecto\proyecto\gym\Lib_aplicacion\obj\Debug\net8.0\Lib_aplicacion.genruntimeconfig.cache

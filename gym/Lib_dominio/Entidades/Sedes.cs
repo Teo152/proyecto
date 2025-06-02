@@ -10,6 +10,7 @@ namespace Lib_dominio.Entidades
     {
         public int id { get; set; }
         public string? nombre { get; set; }
+        public string? imagen { get; set; }
         public string? direccion { get; set; }
     }
 }

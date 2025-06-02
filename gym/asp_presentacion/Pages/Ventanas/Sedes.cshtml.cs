@@ -84,6 +84,16 @@ namespace asp_presentacion.Pages.Ventanas
             {
                
                 Accion = Enumerables.Ventanas.Editar;
+
+                if(FormFile != null) // Convierte archivo a string para guardar imagen
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        FormFile.CopyToAsync(memoryStream).Wait();
+                        Actual!.imagen = EncodingHelper.ToString(memoryStream.ToArray());
+                    }
+                }
+
                 Task<Sedes>? task = null;
                 if (Actual!.id == 0)
                     task = this.iPresentacion!.Guardar(Actual!)!;

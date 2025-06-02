@@ -13,6 +13,7 @@ namespace Lib_dominio.Entidades
      public int id {get; set; }
      public decimal? precio { get; set; }
 
+     public string? imagen { get; set; }
      public String? detalle { get; set; }
 
      public String? nombre { get; set; }

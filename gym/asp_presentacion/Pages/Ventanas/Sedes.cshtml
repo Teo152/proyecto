@@ -47,6 +47,8 @@
             {
                 <input type="hidden"
                 asp-for="@Model.Actual!.nombre" />
+                <input type="hidden"                        @*Campo oculto para conservar la imagen actual*@
+                       asp-for="@Model.Actual!.imagen" /> 
                 <input type="hidden"
                 asp-for="@Model.Actual!.direccion" />
 
@@ -177,7 +179,15 @@
                                     <td class="cl_hidden">
                                         @elemento.direccion
                                     </td>
-                                   
+
+                                    <td class="cl_hidden">
+                                        @if (elemento.imagen != null)
+                                        {
+                                            <img height="60" 
+                                                width="60"
+                                                 src="data:image;base64,@System.Convert.ToBase64String(lib_dominio.Nucleo.EncodingHelper.ToBytes(elemento.imagen))" />
+                                        }
+                                    </td>
 
                                     <td>
                                         <input type="submit"

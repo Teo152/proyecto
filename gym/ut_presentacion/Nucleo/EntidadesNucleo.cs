@@ -9,7 +9,7 @@ namespace ut_presentacion.Nucleo
             return new Planes
             {
                 nombre = "Plan Gold",
-                detalle = "Acceso a todas las sedes, entrenadores personalizados y derecho a 2 invitados por mes.",
+                detalle = "Acceso a todas las sedes, entrenadores personalizados y derecho a 3 invitados por mes.",
                 precio = 100000.00M
             };
         }

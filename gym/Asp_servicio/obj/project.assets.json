@@ -2899,23 +2899,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Autokars\\.nuget\\packages\\": {},
+    "C:\\Users\\Dahiana\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Asp_servicio\\Asp_servicio.csproj",
+      "projectUniqueName": "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Asp_servicio\\Asp_servicio.csproj",
       "projectName": "Asp_servicio",
-      "projectPath": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Asp_servicio\\Asp_servicio.csproj",
-      "packagesPath": "C:\\Users\\Autokars\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Asp_servicio\\obj\\",
+      "projectPath": "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Asp_servicio\\Asp_servicio.csproj",
+      "packagesPath": "C:\\Users\\Dahiana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Asp_servicio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Autokars\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dahiana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2931,14 +2931,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Lib_aplicacion\\Lib_aplicacion.csproj": {
-              "projectPath": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Lib_aplicacion\\Lib_aplicacion.csproj"
+            "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Lib_aplicacion\\Lib_aplicacion.csproj": {
+              "projectPath": "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Lib_aplicacion\\Lib_aplicacion.csproj"
             },
-            "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Lib_dominio\\Lib_dominio.csproj": {
-              "projectPath": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Lib_dominio\\Lib_dominio.csproj"
+            "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Lib_dominio\\Lib_dominio.csproj": {
+              "projectPath": "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Lib_dominio\\Lib_dominio.csproj"
             },
-            "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Lib_repositorio\\Lib_repositorio.csproj": {
-              "projectPath": "C:\\Users\\Autokars\\OneDrive\\Escritorio\\proyecto\\gym\\Lib_repositorio\\Lib_repositorio.csproj"
+            "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Lib_repositorio\\Lib_repositorio.csproj": {
+              "projectPath": "C:\\Users\\Dahiana\\Desktop\\Proyecto\\proyecto\\gym\\Lib_repositorio\\Lib_repositorio.csproj"
             }
           }
         }
@@ -2987,7 +2987,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
