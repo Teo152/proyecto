@@ -1,0 +1,255 @@
+﻿@page
+@model asp_presentacion.Pages.Ventanas.InscripcionesModel  //tener en cuanta este nombre aca
+@{
+    ViewData["Titulo"] = " ";
+}
+<center>
+    <div>
+        <form method="POST"
+              enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <div align="left">
+                <h3>Inscripciones</h3>
+            </div>
+            <div align="left"
+                 class="bt_panel_buttons">
+                <input type="submit"
+                       value="Refrescar"
+                       asp-page-handler="BtRefrescar"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion != lib_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                <input type="submit"
+                       value="Nuevo"
+                       asp-page-handler="BtNuevo"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion != lib_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                <input type="submit"
+                       value="Guardar"
+                       asp-page-handler="BtGuardar"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                <input type="submit"
+                       value="Cancelar"
+                       asp-page-handler="BtCancelar"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+            </div>
+
+            @if (Model.Accion != lib_dominio.Nucleo.Enumerables.Ventanas.Listas ||
+            Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <input type="hidden"
+                       asp-for="@Model.Actual!.id" />
+            }
+            @if (Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <input type="hidden"
+                       asp-for="@Model.Actual!.codigo" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.personas" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.estados_inscripciones" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.planes_sedes" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.fecha_inscripcion" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.fecha_vencimiento" />
+
+
+            }
+
+            @if (Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Editar)
+            {
+                <div class="containers_vn panel panel-default">
+                    <h3>Inscrpciones</h3>@*titulo  paginavv*@
+
+                    <div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Codigo  @*aca modifico lo de guardar en cada div*@
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmNombre"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.codigo" /> @*esta linea conecta con la variable del visual*@
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Personas
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmTelefono"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.personas" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Estados de inscripcion
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmDirreccion"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.estados_inscripciones" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Panes sedes
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmDirreccion"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.planes_sedes" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Fecha inscripcion
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmDirreccion"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.fecha_inscripcion" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Fecha vencimiento
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmDirreccion"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.fecha_vencimiento" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (ViewData.ContainsKey("Mensaje"))
+            {
+                <input type="hidden"
+                       asp-for="@Model.Accion" />
+                @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
+                ;
+            }
+
+            @if (Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <div class='popup'>
+                    <div class='pp_del_inner'>
+                        <div style='width:95%'>
+                            <h2 align="left">
+                                Mensaje
+                            </h2>
+
+                            <h4 align="left">
+                                Desea borrar la entidad?
+                            </h4>
+                            <h6 align="left">
+
+                                @Model.Actual!.codigo
+                            </h6>
+                            <br />
+                            <br />
+                            <input type="submit"
+                                   value="Borrar"
+                                   asp-page-handler="BtBorrar"
+                                   class="btn btn-secondary" />
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtCancelar"
+                                   class="btn btn-secondary" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Listas ||
+            Model.Accion == lib_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <input id="flnombre"
+                       class="cts_forms form-control"
+                       asp-for="@Model.Filtro!.codigo"
+                       placeholder="nombre" />
+                <br />
+
+                <div class="containers_vn panel panel-default">
+                    <table class="tb_data table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>
+                                Codigo
+
+                            </th>
+                            <th>
+                                Personas
+                            </th>
+
+                            <th class="cl_actions">
+                                Estados inscripcion
+                            </th>
+                            <th>
+                                Planes sedes
+                            </th>
+                            <th>
+                                Fecha inscripcion
+                            </th>
+                            <th>
+                                Fecha vencimiento
+                            </th>
+                            <th>
+                                Accion
+                            </th>
+                        </tr>
+                        @if (Model != null && Model.Lista != null)
+                        {
+                            @foreach (var elemento in Model.Lista)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @elemento.codigo
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento.personas
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento.estados_inscripciones
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento.planes_sedes
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento.fecha_inscripcion
+                                    </td>
+                                     <td class="cl_hidden">
+                                        @elemento.fecha_vencimiento
+                                       
+                                    </td>
+
+                                    <td>
+                                        <input type="submit"
+                                               value="Modicar"
+                                               asp-page-handler="BtModificar"
+                                               class="btn btn-secondary"
+                                               asp-route-data="@elemento.id" />
+                                        <input type="submit"
+                                               value="Borrar"
+                                               asp-page-handler="BtBorrarVal"
+                                               class="btn btn-secondary"
+                                               asp-route-data="@elemento.id" />
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </table>
+                </div>
+            }
+        </form>
+    </div>
+</center>

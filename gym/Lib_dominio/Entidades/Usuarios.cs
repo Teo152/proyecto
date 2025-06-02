@@ -17,5 +17,10 @@ namespace Lib_dominio.Entidades
         public int Rol { get; set; }
 
         [ForeignKey("Rol")][JsonIgnore] public Roles? _Rol { get; set; }
+
+        public static object FirstOrDefault(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib_aplicacion\Lib_aplicacion.csproj" />
+    <ProjectReference Include="..\Lib_dominio\Lib_dominio.csproj" />
+    <ProjectReference Include="..\lib_presentaciones\lib_presentaciones.csproj" />
+    <ProjectReference Include="..\Lib_repositorio\Lib_repositorio.csproj" />
+  </ItemGroup>
+
+</Project>

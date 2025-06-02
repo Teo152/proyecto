@@ -26,7 +26,7 @@ namespace lib_repositorios.Interfaces
 
         DbSet<Observaciones>? Observaciones { get; set; }
 
-        DbSet<Empleados> Empleados { get; set; }
+        DbSet<Empleados>? Empleados { get; set; }
 
         DbSet<Usuarios>? Usuarios { get; set; }
 
