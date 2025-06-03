@@ -87,11 +87,12 @@ namespace asp_presentacion.Pages.Ventanas
 
                 if(FormFile != null) // Convierte archivo a string para guardar imagen
                 {
-                    using (var memoryStream = new MemoryStream())
-                    {
+                    var memoryStream = new MemoryStream();
+                    
                         FormFile.CopyToAsync(memoryStream).Wait();
                         Actual!.imagen = EncodingHelper.ToString(memoryStream.ToArray());
-                    }
+                    memoryStream.Dispose();
+                    
                 }
 
                 Task<Sedes>? task = null;

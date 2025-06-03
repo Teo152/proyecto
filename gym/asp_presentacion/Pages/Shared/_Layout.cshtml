@@ -37,73 +37,44 @@ bg-white border-bottom box-shadow mb-3">
 				<div class="navbar-collapse collapse d-sm-inline-flex justifycontent-between">
 					<ul class="navbar-nav flex-grow-1">
 						<li class="nav-item">
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Sedes">
-								Sedes
-								
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Planes">
-								Planes
+							<div class="menu-horizontal">
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Sedes">Sedes</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Planes">Planes</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Estados_Inscripciones">Estados_Inscripciones</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Estados_pagos">Estados_pagos</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Personas">Personas</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Planes_Sedes">Planes_Sedes</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Inscripciones">Inscripciones</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Observaciones">Observaciones</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Empleados">Empleados</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Roles">Roles</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Permisos">Permisos</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Roles_Permisos">Roles_Permisos</a>
+								<a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Usuarios">Usuarios</a>
+							</div>
 
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Estados_Inscripciones">
-								Estados_Inscripciones
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Estados_pagos">
-								Estados_pagos
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Personas">
-								Personas
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Planes_Sedes">
-								Planes_Sedes
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Inscripciones">
-								Inscripciones
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Observaciones">
-								Observaciones
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Empleados">
-								Empleados
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Roles">
-								Roles
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Permisos">
-								Permisos
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Roles_Permisos">
-								Roles_Permisos
-							</a>
-							<a class="nav-link text-dark"
-							   asp-area=""
-							   asp-page="/Ventanas/Usuarios">
-								Usuarios
-							</a>
+							<style>
+								.menu-horizontal {
+									display: flex;
+									flex-wrap: wrap; /* Para que los enlaces bajen de línea si no caben */
+									gap: 15px; /* Espacio entre los enlaces */
+									padding: 10px; /* Espaciado interno */
+									background-color: #f8f9fa; /* Fondo opcional */
+								}
+
+									.menu-horizontal a {
+										text-decoration: none; /* Sin subrayado */
+										color: #343a40; /* Color oscuro del texto */
+										font-weight: bold;
+										padding: 5px 10px;
+										border-radius: 4px;
+										transition: background-color 0.3s;
+									}
+
+										.menu-horizontal a:hover {
+											background-color: #e2e6ea; /* Color al pasar el mouse */
+										}
+							</style>
 
 						</li>
 					</ul>
